@@ -1,8 +1,18 @@
 import React from 'react'
+import SFooter from '../sections/SFooter'
+import SMainMenu from '../sections/SMainMenu'
 
 const NotFoundView = () => {
   return (
-    <div>404 - Page Not Found</div>
+    <>
+      <SMainMenu />
+      <div className="_container">
+        <h1>404 - Page Not Found</h1>
+      </div>
+      <div className="footernotfound">
+      <SFooter />
+      </div>
+    </>
   )
 }
 

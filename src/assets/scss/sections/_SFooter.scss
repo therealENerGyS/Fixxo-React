@@ -1,0 +1,26 @@
+.footernotfound {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  footer {
+    background-color: $color-gray-10;
+    border: 1px solid $color-gray-40;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .socials {
+      padding: 1rem 0;
+      a {
+        color: $color-primary;
+        padding: 0 0.3rem;
+        &:hover {
+          color: $color-secondary;
+          transition: all 0.1s ease-in-out;
+        }
+      }
+    }
+  }
+}

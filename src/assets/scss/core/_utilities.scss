@@ -1,0 +1,60 @@
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+.j-c-start {
+  justify-content: flex-start;
+}
+.j-c-end {
+  justify-content: flex-end;
+}
+.j-c-center {
+  justify-content: center;
+}
+.j-c-between {
+  justify-content: space-between;
+}
+.j-c-evenly {
+  justify-content: space-evenly;
+}
+
+.a-i-center {
+  align-items: center;
+}
+
+html,
+body {
+  @include default-font();
+
+  color: $font-color;
+  padding: 0;
+  margin: 0;
+}
+
+._container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include md {
+    padding: 0 1.5rem;
+  }
+  @include xl {
+    padding: 0 4.5rem;
+  }
+  @include xxl {
+    padding: 0 6rem;
+  }
+  @include xxxl {
+    padding: 0 8rem;
+  }
+}

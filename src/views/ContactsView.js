@@ -1,8 +1,14 @@
 import React from 'react'
+import SFooter from '../sections/SFooter'
+import SMainMenu from '../sections/SMainMenu'
 
 const ContactsView = () => {
   return (
-    <div>Contacts</div>
+    <>
+      <SMainMenu />
+      <h1>Contacts</h1>
+      <SFooter />
+    </>
   )
 }
 

@@ -2,15 +2,13 @@ import React from 'react'
 import SFooter from '../sections/SFooter'
 import SMainMenu from '../sections/SMainMenu'
 
-const HomeView = () => {
+const ShoppingCartView = () => {
   return (
     <>
       <SMainMenu />
-      <div className="footernotfound">
       <SFooter />
-      </div>
     </>
   )
 }
 
-export default HomeView
+export default ShoppingCartView
