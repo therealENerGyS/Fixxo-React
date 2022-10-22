@@ -1,6 +1,11 @@
 .top-menu {
+  z-index: 99;
   padding-top: 10px;
   padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
   ._container {
     flex-direction: column;
     @include md {

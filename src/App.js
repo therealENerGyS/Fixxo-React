@@ -9,6 +9,7 @@ import SearchView from './views/SearchView'
 import CompareView from './views/CompareView'
 import WishListView from './views/WishListView'
 import ShoppingCartView from './views/ShoppingCartView'
+import ProductDetailsView from './views/ProductDetailsView'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<HomeView />} />
         <Route path='/categories' element={<CategoriesView />} />
         <Route path='/products' element={<ProductsView />} />
+        <Route path='/products/:title' element={<ProductDetailsView />} />
         <Route path='/contacts' element={<ContactsView />} />
         <Route path='/search' element={<SearchView />} />
         <Route path='/compare' element={<CompareView />} />

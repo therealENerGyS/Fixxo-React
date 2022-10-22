@@ -16,7 +16,7 @@ const SMainMenu = () => {
           <NavLink className="menu-link" to="/categories" end>
             Categories
           </NavLink>
-          <NavLink className="menu-link" to="/products" end>
+          <NavLink className="menu-link" to="/products">
             Products
           </NavLink>
           <NavLink className="menu-link" to="/contacts" end>
