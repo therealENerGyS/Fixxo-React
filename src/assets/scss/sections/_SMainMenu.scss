@@ -2,13 +2,16 @@
   z-index: 99;
   padding-top: 10px;
   padding-bottom: 10px;
-  position: fixed;
-  top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: $color-gray-30;
+  @include lg {
+    position: fixed;
+    top: 0;
+  }
   ._container {
     flex-direction: column;
     @include md {
+
       flex-direction: row;
       justify-content: space-between;
     }
@@ -67,7 +70,7 @@
           color: $color-white;
           box-shadow: 0 0 6px 4px $color-shadow;
         }
-         .product-qty {
+        .product-qty {
           @include center-content();
           font-size: $font-size-11;
           color: $color-white;

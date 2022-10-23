@@ -1,5 +1,5 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
 //Cores
 @import "./core/variables";
@@ -7,7 +7,7 @@
 @import "./core/utilities";
 
 //Components
-
+@import "./components/CProductCard";
 
 //Sections
 @import "./sections/SMainMenu";
@@ -15,3 +15,9 @@
 @import "./sections/SMainShowcase";
 @import "./sections/SProductGrid";
 @import "./sections/SWinterArrivals";
+@import "./sections/SPamelaConscious";
+@import "./sections/SSpeciality";
+@import "./sections/STwoFor29";
+@import "./sections/STwoFor49";
+@import "./sections/SDiscountBanner";
+@import "./sections/STopProducts";

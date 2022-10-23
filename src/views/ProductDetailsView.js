@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from 'react-router-dom' 
+import { useParams } from 'react-router-dom';
 import SFooter from "../sections/SFooter";
 import SMainMenu from "../sections/SMainMenu";
 

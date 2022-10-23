@@ -4,8 +4,6 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    @include md {
-    }
     > img {
       display: none;
       @include md {
@@ -18,7 +16,7 @@
       }
     }
     .showcase-text {
-      padding: 12rem 0;
+      padding: 2rem 0;
       display: flex;
       flex-direction: column;
       justify-content: center;

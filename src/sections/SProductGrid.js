@@ -1,5 +1,5 @@
 import React from 'react'
-import ProductCard from '../components/SProductCard'
+import CProductCard from '../components/CProductCard'
 
 const SProductGrid = ({title, products}) => {
   
@@ -9,7 +9,7 @@ const SProductGrid = ({title, products}) => {
       <h1 className="product-h1">{title}</h1>
       <div className="grid">
         {
-          products.map(product => <ProductCard key={product.id} product={product} />)
+          products.map(product => <CProductCard key={product.id} product={product} />)
         }
       </div>
     </div>

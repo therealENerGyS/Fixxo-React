@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
 
-const SProductCard = ({product}) => {
+const CProductCard = ({product}) => {
 
   const addToWishList = (e) => {
     console.log(`Added to Wishlist`)
@@ -46,4 +46,4 @@ const SProductCard = ({product}) => {
   );
 };
 
-export default SProductCard;
+export default CProductCard;

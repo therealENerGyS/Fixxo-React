@@ -1,0 +1,69 @@
+.two-for-deal-29 {
+  padding: 1rem 0 2rem 0;
+  ._container {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 44.1rem;
+    @include lg {
+      flex-direction: row;
+    }
+    .two-for {
+      background-color: #bbbbbb;
+      height: 100%;
+      width: 100%;
+      color: $color-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include lg {
+        width: 49%;
+      }
+      h2 {
+        padding: 0 1rem;
+        font-size: $font-size-45;
+        font-weight: $font-weight-bold;
+        @include lg {
+          padding: 0;
+        }
+      }
+    }
+    .grid-two-for {
+      display: grid;
+      height: 100%;
+      gap: 2rem;
+      column-gap: 1.5rem;
+      grid-template-columns: repeat(2, minmax(100px, 15rem));
+      grid-template-rows: repeat(2, minmax(100px, 1fr));
+      @include md {
+        padding: 0;
+      }
+      @include lg {
+        padding-top: 0;
+      }
+      .product {
+        .product-info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          .product-category {
+            color: $color-muted;
+            font-size: $font-size-13;
+          }
+          .product-title {
+            font-size: $font-size-16;
+          }
+          .price {
+            .discount-price {
+              .current-price {
+                font-size: $font-size-18;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

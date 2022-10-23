@@ -17,10 +17,10 @@
                 padding: 0 2rem;
                 display:flex;
                 justify-content: center;
+                align-items: flex-start;
                 flex-direction: column;
                 width: 80%;
                 @include md {
-                    align-items: flex-end;
                     width: 70%;
                 }
                 @include xl {
