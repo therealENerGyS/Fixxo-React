@@ -1,17 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from 'react-router-dom';
+import SCurrentPageLocation from "../sections/SCurrentPageLocation";
 import SFooter from "../sections/SFooter";
 import SMainMenu from "../sections/SMainMenu";
+import SProductDiscount from "../sections/SProductDiscount";
+import SProductDetails from "../sections/SProductDetails";
+import { useProductContext } from '../contexts/ProductContext'
 
 const ProductDetailsView = () => {
-const params = useParams()
+const {id} = useParams()
+const {product, getProduct} = useProductContext()
 
+useEffect(() => {
+  getProduct(id)
+}, [])
   return (
     <>
       <SMainMenu />
-      <div className="_container">
-        <h1>{params.title.replaceAll("-", " ")}</h1>
-      </div>
+      <SProductDiscount />
+      <SCurrentPageLocation />
+      <SProductDetails item={product} />
       <SFooter />
     </>
   );

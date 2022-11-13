@@ -16,7 +16,7 @@ const SPamelaConscious = () => {
           <div className="conscious-text">
             <h2 className="pamela-conscious-text">Let's Be<br />Conscious</h2>
             <button type="button" className="btn-theme btn-white">
-              FLASH SALE
+              FLASE SALE
             </button>
           </div>
         </div>

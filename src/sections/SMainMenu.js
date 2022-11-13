@@ -1,8 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import CMenuIcon from "../components/CMenuIcon";
+//import CategoriesView from "../views/CategoriesView";
+import { useShoppingCart } from "../contexts/ShoppingCartContext";
 
 const SMainMenu = () => {
+  const { cartQuantity } = useShoppingCart()
+
   return (
     <nav className="top-menu">
       <div className="_container">
@@ -26,8 +30,11 @@ const SMainMenu = () => {
         <div className="product-links d-flex">
           <CMenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
           <CMenuIcon link="/compare" icon="fa-regular fa-code-compare" />
-          <CMenuIcon quantity="1" link="/wishlist" icon="fa-regular fa-heart" />
-          <CMenuIcon quantity="3" link="/shopping-cart" icon="fa-regular fa-bag-shopping" />
+          <CMenuIcon link="/wishlist" icon="fa-regular fa-heart" />
+          <button className="product-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+            <span className="product-qty">{cartQuantity}</span>
+            <i className="fa-regular fa-bag-shopping"></i>
+          </button>
         </div>
       </div>
     </nav>

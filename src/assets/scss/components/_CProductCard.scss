@@ -58,8 +58,11 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      &:hover {
+        background-color: $color-primary;
+      }
       @include hover {
-        transform: translateY(100%);
+        transform: translateY(150%);
         transition: transform 0.3s ease-in-out;
       }
     }
@@ -74,31 +77,23 @@
       font-size: $font-size-13;
       font-weight: $font-weight-medium;
     }
-    .product-title {
+    .product-name {
       font-size: $font-size-16;
       font-weight: $font-weight-semi-bold;
     }
-    .product-rating {
+    .rating {
       color: $color-secondary;
     }
     .price {
       display: flex;
       justify-content: center;
       text-align: center;
-      .discount-price {
-        font-size: $font-size-16;
-        text-decoration: line-through;
-        margin: 0;
-        padding-right: 0.3rem;
-      }
-      .current-price {
-        display: inline-block;
-        font-size: $font-size-18;
-        font-weight: $font-weight-semi-bold;
-        margin: 0;
-        padding-left: 0.3rem;
-        text-decoration: none;
-      }
+      font-size: $font-size-18;
+      font-size: $font-size-18;
+      font-weight: $font-weight-semi-bold;
+      margin: 0;
+      padding-left: 0.3rem;
+      text-decoration: none;
     }
   }
 }
