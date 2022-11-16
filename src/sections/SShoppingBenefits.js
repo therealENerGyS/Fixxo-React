@@ -3,8 +3,8 @@ import CShoppingBenefit from '../components/CShoppingBenefit'
 
 const SShoppingBenefits = () => {
     return (
-        <section class="shopping-benefits">
-            <div class="_container">
+        <section className="shopping-benefits">
+            <div className="_container">
                 <CShoppingBenefit icon="fa-regular fa-phone-office" title="Customer Support" />
                 <CShoppingBenefit icon="fa-regular fa-credit-card" title="Secured Payment" />
                 <CShoppingBenefit icon="fa-regular fa-truck" title="Free Home Delivery" />
